@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    color: #fff;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img {
+    border-radius: 500px;
+    width: 250px;
+    height: 250px;
+}
