@@ -9,7 +9,7 @@ function App() {
     <div className="container">
         <div className="menu">
             <div className="up-menu">
-                <h1>Select your game!</h1>
+                <h1>CHOOSE YOUR GAME! </h1>
             </div>
             <div className="bottom-menu">
                 <span><img src={darksouls} alt="" /></span>
