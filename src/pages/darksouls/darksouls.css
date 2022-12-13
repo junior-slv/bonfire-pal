@@ -1,0 +1,52 @@
+:root {
+    --nigger: #000;
+  }  
+.container-darksouls{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: url('https://wallpapercave.com/wp/wp2432355.jpg');
+    background-size: cover;
+}
+.menu-darksouls{
+    background: #000;
+    opacity: 0.65;
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.knight{
+    height: 6%;
+    width: 100%;
+    overflow: hidden;
+}
+#arrow:checked ~ .knight {
+    height: 100%;
+}
+.soul-honor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    margin-top: 15px;
+}
+.circle-up{
+    width: 25px;
+    height: 25px;
+
+}
+.soul-used{
+    margin-left: 18px;
+}
+.weapon-used{
+    margin-left: 12px;
+}

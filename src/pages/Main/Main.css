@@ -5,7 +5,7 @@
     margin: 0;
     color: #fff;
 }
-.container{
+.container-main{
     width: 100vw;
     height: 100vh;
     background-image: url('https://cdna.artstation.com/p/assets/images/images/014/004/696/original/ira-geneve-darksouls-animated-wallpaper.gif?1542049339');
@@ -15,24 +15,24 @@
     align-items: center;
     justify-content: center;
 }
-.menu{
+.menu-main{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-h1{
+.text-main{
     font-size: 54px;
     text-shadow: 0px 0px 14px rgba(255, 255, 8, 0.6);
 
 }
-span{
+.span-main{
     margin-left: 15px;
 }
 .bottom-menu{
     margin-top: 15px;
 }
-img {
+.img-main {
     border-radius: 500px;
     -webkit-box-shadow: 10px 11px 29px 3px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 11px 29px 3px rgba(0,0,0,0.75);
