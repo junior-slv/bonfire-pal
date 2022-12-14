@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap');
+
+*{
+    font-family: 'EB Garamond', serif;
+    margin: 0;
+    color: #fff;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons{
+    width: 32px;
+    height: 32px;
+}
+.language > img:nth-child(2){
+    margin-left: 15px;
+}
+#en{
+    display: flex;
+}
+#pt{
+    display: none;
+}
+.apresentation-menu{
+    animation: transitionIn 4s;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border: 3px solid #fff;
+}
+
+.apresentation-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 35px;
+}
+.apresentation-content > h1{
+    font-size: 54px;
+    text-shadow: 0px 0px 14px rgba(255, 255, 8, 0.6);
+}
+.apresentation-content > p{
+    margin-top: 5px;
+}
+.apresentation-btn {
+    margin-top: 5px;
+	box-shadow:inset 0px 1px 7px 1px #a6827e;
+	background:linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
+	background-color:#7d5d3b;
+	border:2px solid #54381e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:21px;
+	padding:6px 7px;
+	text-decoration:none;
+	text-shadow:-2px 4px 3px #4d3534;
+}
+.apresentation-btn:hover {
+	background:linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
+	background-color:#634b30;
+}
+.apresentation-btn:active {
+	position:relative;
+	top:1px;
+}
+#bongif{
+    position: absolute;
+    left: -116px;
+    bottom: 1px;
+}
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+    }
+    
+    to{
+        opacity: 1;
+    }
+}
+@media only screen and (max-width: 600px){
+    #bongif{
+        display: none;
+    }
+  }

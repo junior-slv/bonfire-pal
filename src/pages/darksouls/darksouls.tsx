@@ -1,6 +1,5 @@
 import './darksouls.css';
 import circleup from '../../assets/circle-up.png'
-import { Knight} from '../../scripts/styled';
 
 
 function Darksouls() {
