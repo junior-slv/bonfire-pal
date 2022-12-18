@@ -8,7 +8,8 @@
 .container{
     width: 100vw;
     height: 100vh;
-    background: #000;
+    background: url('https://cdn.discordapp.com/attachments/613144044411027456/1052670883644317787/14616.gif');
+    background-size: cover;
 
     display: flex;
     justify-content: center;
@@ -28,7 +29,7 @@
     display: none;
 }
 .apresentation-menu{
-    animation: transitionIn 4s;
+    animation: transitionIn 5s;
     
     display: flex;
     justify-content: center;

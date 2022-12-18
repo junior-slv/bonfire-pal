@@ -93,7 +93,7 @@ function Apresentation() {
                     
                 </Portugues>
             </div>
-            <img id='bongif' src={bonfire} alt="" />
+
         </div>
      );
 }
