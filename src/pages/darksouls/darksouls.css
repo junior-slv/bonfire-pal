@@ -1,14 +1,14 @@
 *{
     color: crimson;
-    border: 1px solid red;
+
 } 
 .container-darksouls{
     width: 100vw;
     height: 275vh;
 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
 
     background: #000;
 
@@ -16,6 +16,16 @@
     
 }
 
+#chek:not(:checked) ~ .kni{
+    overflow: hidden;
+    height: 0vh;
+    transition: 3s;
+}
+#chek:checked ~ .kni{
+    overflow: hidden;
+    height: 248vh;
+    transition: 3s;
+}
 .souls-weapons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

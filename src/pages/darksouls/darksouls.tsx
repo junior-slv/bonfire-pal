@@ -1,7 +1,7 @@
 import './darksouls.css';
 // import circleup from '../../assets/circle-up.png'
 import styled from 'styled-components'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import React from 'react';
 
 const ToggleSwitch : any = ({
@@ -49,48 +49,53 @@ const Darksouls = () => {
     const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
     const [selected3, setSelected3] = useState(localStorage.getItem('toggle-switch-3') === 'true');
     const [selected4, setSelected4] = useState(localStorage.getItem('toggle-switch-4') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
-    const [selected2, setSelected2] = useState(localStorage.getItem('toggle-switch-2') === 'true');
+    const [selected5, setSelected5] = useState(localStorage.getItem('toggle-switch-5') === 'true');
+    const [selected6, setSelected6] = useState(localStorage.getItem('toggle-switch-6') === 'true');
+    const [selected7, setSelected7] = useState(localStorage.getItem('toggle-switch-7') === 'true');
+    const [selected8, setSelected8] = useState(localStorage.getItem('toggle-switch-8') === 'true');
+    const [selected9, setSelected9] = useState(localStorage.getItem('toggle-switch-9') === 'true');
+    const [selected10, setSelected10] = useState(localStorage.getItem('toggle-switch-10') === 'true');
+    const [selected11, setSelected11] = useState(localStorage.getItem('toggle-switch-11') === 'true');
+    const [selected12, setSelected12] = useState(localStorage.getItem('toggle-switch-12') === 'true');
+    const [selected13, setSelected13] = useState(localStorage.getItem('toggle-switch-13') === 'true');
+    const [selected14, setSelected14] = useState(localStorage.getItem('toggle-switch-14') === 'true');
+    const [selected15, setSelected15] = useState(localStorage.getItem('toggle-switch-15') === 'true');
+    const [selected16, setSelected16] = useState(localStorage.getItem('toggle-switch-16') === 'true');
+    const [selected17, setSelected17] = useState(localStorage.getItem('toggle-switch-17') === 'true');
+    const [selected18, setSelected18] = useState(localStorage.getItem('toggle-switch-18') === 'true');
+    const [selected19, setSelected19] = useState(localStorage.getItem('toggle-switch-19') === 'true');
+    const [selected20, setSelected20] = useState(localStorage.getItem('toggle-switch-20') === 'true');
+    const [selected21, setSelected21] = useState(localStorage.getItem('toggle-switch-21') === 'true');
+    const [selected22, setSelected22] = useState(localStorage.getItem('toggle-switch-22') === 'true');
+    const [selected23, setSelected23] = useState(localStorage.getItem('toggle-switch-23') === 'true');
+    const [selected24, setSelected24] = useState(localStorage.getItem('toggle-switch-24') === 'true');
+    const [selected25, setSelected25] = useState(localStorage.getItem('toggle-switch-25') === 'true');
+    const [selected26, setSelected26] = useState(localStorage.getItem('toggle-switch-26') === 'true');
+    const [selected27, setSelected27] = useState(localStorage.getItem('toggle-switch-27') === 'true');
+    const [selected28, setSelected28] = useState(localStorage.getItem('toggle-switch-28') === 'true');
+    const [selected29, setSelected29] = useState(localStorage.getItem('toggle-switch-29') === 'true');
+    const [selected30, setSelected30] = useState(localStorage.getItem('toggle-switch-30') === 'true');
+    const [selected31, setSelected31] = useState(localStorage.getItem('toggle-switch-31') === 'true');
+    const [selected32, setSelected32] = useState(localStorage.getItem('toggle-switch-32') === 'true');
+    const [selected33, setSelected33] = useState(localStorage.getItem('toggle-switch-33') === 'true');
+    const [selected34, setSelected34] = useState(localStorage.getItem('toggle-switch-34') === 'true');
+    const [selected35, setSelected35] = useState(localStorage.getItem('toggle-switch-35') === 'true');
+    const [selected36, setSelected36] = useState(localStorage.getItem('toggle-switch-36') === 'true');
+    const [selected37, setSelected37] = useState(localStorage.getItem('toggle-switch-37') === 'true');
+    const [selected38, setSelected38] = useState(localStorage.getItem('toggle-switch-38') === 'true');
+    const [selected39, setSelected39] = useState(localStorage.getItem('toggle-switch-39') === 'true');
+    const [selected40, setSelected40] = useState(localStorage.getItem('toggle-switch-40') === 'true');
+    const [selected41, setSelected41] = useState(localStorage.getItem('toggle-switch-41') === 'true');
+    const [selected42, setSelected42] = useState(localStorage.getItem('toggle-switch-42') === 'true');
+    const [selected43, setSelected43] = useState(localStorage.getItem('toggle-switch-43') === 'true');
 
       
     const [checked, setChecked] = useState(true);
+
+    useEffect(() => {
+
+    }, [])
+    
     if(checked === true){
         Knight = styled.div`
 
@@ -109,18 +114,19 @@ const Darksouls = () => {
     }
 
 
-
+{/* <input type="checkbox" id='chek'
+        defaultChecked={checked}
+        onChange={() => setChecked(!checked)}
+      /> */}
     return ( 
         <div className="container-darksouls">
             <div className="menu-darksouls">
                 <div className="title-darksouls">
                     <h1>THE DARK SOUL ACHIEVEMENT OVERALL: 100%</h1> 
                 </div>
-                <Knight>
-                    <h2>Knihght's honor <input type="checkbox"
-        defaultChecked={checked}
-        onChange={() => setChecked(!checked)}
-      /></h2>
+                <h2>Knihght's honor </h2> 
+                <input type="checkbox" name="" id="chek" />
+                <form className="kni" >
                     <div className="souls-weapons">
                         <div className="div1">Soul Weapons</div>
                         <div className="div2">Soul Used:</div>
@@ -145,43 +151,134 @@ const Darksouls = () => {
                                 } />Crystal Ring Shield</div>
                         <div className="div8">Moonlight Butterfly</div>
                         <div className="div9">Shield</div>
-                        <div className="div10">Quelaag's Furysword</div>
+                        <div className="div10"><ToggleSwitch checked={selected3} id='toggle-switch-3'
+                        onChange={
+                        (e) => {
+                                    localStorage.setItem('toggle-switch-3',`${e.target.checked}`);
+                                    setSelected3(e.target.checked);
+                                    console.log(e.target.checked)
+                                }
+                                } />Quelaag's Furysword</div>
                         <div className="div11">Quelaag</div>
                         <div className="div12">Curved Sword</div>
-                        <div className="div13">Chaos Blade</div>
+                        <div className="div13"><ToggleSwitch checked={selected4} id='toggle-switch-4'
+                        onChange={
+                        (e) => {
+                                    localStorage.setItem('toggle-switch-4',`${e.target.checked}`);
+                                    setSelected4(e.target.checked);
+                                    console.log(e.target.checked)
+                                }
+                                } />Chaos Blade</div>
                         <div className="div14">Quelaag</div>
                         <div className="div15">Katana</div>
-                        <div className="div16">G.Sword of Artorias (Cursed)</div>
+                        <div className="div16"><ToggleSwitch checked={selected5} id='toggle-switch-5'
+                        onChange={
+                        (e) => {
+                                    localStorage.setItem('toggle-switch-5',`${e.target.checked}`);
+                                    setSelected5(e.target.checked);
+                                    console.log(e.target.checked)
+                                }
+                                } />G.Sword of Artorias (Cursed)</div>
                         <div className="div17">Sif</div>
                         <div className="div18">Dagger</div>
-                        <div className="div19">G.Sword of Artorias</div>
+                        <div className="div19"><ToggleSwitch checked={selected6} id='toggle-switch-6'
+                        onChange={
+                        (e) => {
+                                    localStorage.setItem('toggle-switch-6',`${e.target.checked}`);
+                                    setSelected6(e.target.checked);
+                                    console.log(e.target.checked)
+                                }
+                                } />G.Sword of Artorias</div>
                         <div className="div20">Sif</div>
                         <div className="div21">Broken S.Sword</div>
-                        <div className="div22">G.Shield of Artorias</div>
+                        <div className="div22"><ToggleSwitch checked={selected7} id='toggle-switch-7'
+                        onChange={
+                        (e) => {
+                                    localStorage.setItem('toggle-switch-7',`${e.target.checked}`);
+                                    setSelected7(e.target.checked);
+                                    console.log(e.target.checked)
+                                }
+                                } />G.Shield of Artorias</div>
                         <div className="div23">Sif</div>
                         <div className="div24">Shield</div>
-                        <div className="div25">Golem Axe</div>
+                        <div className="div25"><ToggleSwitch checked={selected8} id='toggle-switch-8'
+                        onChange={
+                        (e) => {
+                                    localStorage.setItem('toggle-switch-8',`${e.target.checked}`);
+                                    setSelected8(e.target.checked);
+                                    console.log(e.target.checked)
+                                }
+                                } />Golem Axe</div>
                         <div className="div26">Iron Golem</div>
                         <div className="div27">Axe</div>
-                        <div className="div28">Dragon Bone Fist</div>
+                        <div className="div28"><ToggleSwitch checked={selected9} id='toggle-switch-9'
+                        onChange={
+                        (e) => {
+                                    localStorage.setItem('toggle-switch-9',`${e.target.checked}`);
+                                    setSelected9(e.target.checked);
+                                    console.log(e.target.checked)
+                                }
+                                } />Dragon Bone Fist</div>
                         <div className="div29">Iron Golem</div>
                         <div className="div30">Fist</div>
-                        <div className="div31">Lifehunt Scythe</div>
+                        <div className="div31"><ToggleSwitch checked={selected10} id='toggle-switch-10'
+                        onChange={
+                        (e) => {
+                                    localStorage.setItem('toggle-switch-10',`${e.target.checked}`);
+                                    setSelected10(e.target.checked);
+                                    console.log(e.target.checked)
+                                }
+                                } />Lifehunt Scythe</div>
                         <div className="div32">Priscilla</div>
                         <div className="div33">Halberd/Whip</div>
-                        <div className="div34">Dragonslayer Spear</div>
+                        <div className="div34"><ToggleSwitch checked={selected11} id='toggle-switch-11'
+                        onChange={
+                        (e) => {
+                                    localStorage.setItem('toggle-switch-11',`${e.target.checked}`);
+                                    setSelected11(e.target.checked);
+                                    console.log(e.target.checked)
+                                }
+                                } />Dragonslayer Spear</div>
                         <div className="div35">Ornstein</div>
                         <div className="div36">Spear/Thrusting Sword</div>
-                        <div className="div37">Smough's Hammer</div>
+                        <div className="div37"><ToggleSwitch checked={selected12} id='toggle-switch-12'
+                        onChange={
+                        (e) => {
+                                    localStorage.setItem('toggle-switch-12',`${e.target.checked}`);
+                                    setSelected12(e.target.checked);
+                                    console.log(e.target.checked)
+                                }
+                                } />Smough's Hammer</div>
                         <div className="div38">Smough</div>
                         <div className="div39">G./Hammer</div>
-                        <div className="div40">Darkmoon Bow</div>
+                        <div className="div40"><ToggleSwitch checked={selected13} id='toggle-switch-13'
+                        onChange={
+                        (e) => {
+                                    localStorage.setItem('toggle-switch-13',`${e.target.checked}`);
+                                    setSelected13(e.target.checked);
+                                    console.log(e.target.checked)
+                                }
+                                } />Darkmoon Bow</div>
                         <div className="div41">Gwyndolin</div>
                         <div className="div42">Bow</div>
-                        <div className="div43">The Darkmoon Catalyst</div>
+                        <div className="div43"><ToggleSwitch checked={selected14} id='toggle-switch-14'
+                        onChange={
+                        (e) => {
+                                    localStorage.setItem('toggle-switch-14',`${e.target.checked}`);
+                                    setSelected14(e.target.checked);
+                                    console.log(e.target.checked)
+                                }
+                                } />The Darkmoon Catalyst</div>
                         <div className="div44">Gwyndolin</div>
                         <div className="div45">Catalyst</div>
-                        <div className="div46">Great Lord Greatsword</div>
+                        <div className="div46"><ToggleSwitch checked={selected15} id='toggle-switch-15'
+                        onChange={
+                        (e) => {
+                                    localStorage.setItem('toggle-switch-15',`${e.target.checked}`);
+                                    setSelected15(e.target.checked);
+                                    console.log(e.target.checked)
+                                }
+                                } />Great Lord Greatsword</div>
                         <div className="div47">Gwyn</div>
                         <div className="div48">Dagger/G.Sword/S.Sword</div>
                     </div>
@@ -278,7 +375,7 @@ const Darksouls = () => {
                         <div className="div132">Effigy Shield</div>
                         <div className="div133">On a corpse in the Tomb of the Giants</div>
                     </div>
-                </Knight>
+                </form>
             </div>
         </div>
      );
