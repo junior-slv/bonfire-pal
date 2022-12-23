@@ -125,7 +125,7 @@ const Darksouls = () => {
                 <input type="checkbox" name="" id="chek" />
                 <form className="kni" >
                     <div className="souls-weapons">
-                        <div className="div1">Soul Weapons: {swep.toFixed(2)}%</div>
+                        <div className="div1">Soul Weapons: {swep.toFixed(0)}%</div>
                         <div className="div2">Soul Used:</div>
                         <div className="div3">You also need a +10 ...:</div>
                         <div className="div4"
@@ -137,7 +137,7 @@ const Darksouls = () => {
                                         localStorage.setItem('toggle-switch-1',`${e.target.checked}`);
                                         setSelected1(e.target.checked);
                                         console.log(e.target.checked)
-                                        swep = selected1 ? swep-6.6 : swep+6.6;
+                                        swep = selected1 ? swep-6.67 : swep+6.67;
 
                                     }
                                     } /> M.L. Butterfly Horn</div>
@@ -155,7 +155,7 @@ const Darksouls = () => {
                                     localStorage.setItem('toggle-switch-2',`${e.target.checked}`);
                                     setSelected2(e.target.checked);
                                     console.log(e.target.checked)
-                                    swep = selected2 ? swep-6.6 : swep+6.6;
+                                    swep = selected2 ? swep-6.67 : swep+6.67;
                                 }
                                 
                                 } />Crystal Ring Shield</div>
@@ -173,7 +173,7 @@ const Darksouls = () => {
                                     localStorage.setItem('toggle-switch-3',`${e.target.checked}`);
                                     setSelected3(e.target.checked);
                                     console.log(e.target.checked)
-                                    swep = selected3 ? swep-6.6 : swep+6.6;
+                                    swep = selected3 ? swep-6.67 : swep+6.67;
                                 }
                                 } />Quelaag's Furysword</div>
                         <div className="div11"
@@ -190,6 +190,7 @@ const Darksouls = () => {
                                     localStorage.setItem('toggle-switch-4',`${e.target.checked}`);
                                     setSelected4(e.target.checked);
                                     console.log(e.target.checked)
+                                    swep = selected4 ? swep-6.67 : swep+6.67;
                                 }
                                 } />Chaos Blade</div>
                         <div className="div14"
@@ -206,6 +207,7 @@ const Darksouls = () => {
                                     localStorage.setItem('toggle-switch-5',`${e.target.checked}`);
                                     setSelected5(e.target.checked);
                                     console.log(e.target.checked)
+                                    swep = selected5 ? swep-6.67 : swep+6.67;
                                 }
                                 } />G.Sword of Artorias (Cursed)</div>
                         <div className="div17"
@@ -222,6 +224,7 @@ const Darksouls = () => {
                                     localStorage.setItem('toggle-switch-6',`${e.target.checked}`);
                                     setSelected6(e.target.checked);
                                     console.log(e.target.checked)
+                                    swep = selected6 ? swep-6.67 : swep+6.67;
                                 }
                                 } />G.Sword of Artorias</div>
                         <div className="div20"
@@ -238,6 +241,7 @@ const Darksouls = () => {
                                     localStorage.setItem('toggle-switch-7',`${e.target.checked}`);
                                     setSelected7(e.target.checked);
                                     console.log(e.target.checked)
+                                    swep = selected7 ? swep-6.67 : swep+6.67;
                                 }
                                 } />G.Shield of Artorias</div>
                         <div className="div23"
@@ -254,6 +258,7 @@ const Darksouls = () => {
                                     localStorage.setItem('toggle-switch-8',`${e.target.checked}`);
                                     setSelected8(e.target.checked);
                                     console.log(e.target.checked)
+                                    swep = selected8 ? swep-6.67 : swep+6.67;
                                 }
                                 } />Golem Axe</div>
                         <div className="div26"
@@ -270,6 +275,7 @@ const Darksouls = () => {
                                     localStorage.setItem('toggle-switch-9',`${e.target.checked}`);
                                     setSelected9(e.target.checked);
                                     console.log(e.target.checked)
+                                    swep = selected9 ? swep-6.67 : swep+6.67;
                                 }
                                 } />Dragon Bone Fist</div>
                         <div className="div29"
@@ -286,6 +292,7 @@ const Darksouls = () => {
                                     localStorage.setItem('toggle-switch-10',`${e.target.checked}`);
                                     setSelected10(e.target.checked);
                                     console.log(e.target.checked)
+                                    swep = selected10 ? swep-6.67 : swep+6.67;
                                 }
                                 } />Lifehunt Scythe</div>
                         <div className="div32"
@@ -302,6 +309,7 @@ const Darksouls = () => {
                                     localStorage.setItem('toggle-switch-11',`${e.target.checked}`);
                                     setSelected11(e.target.checked);
                                     console.log(e.target.checked)
+                                    swep = selected11 ? swep-6.67 : swep+6.67;
                                 }
                                 } />Dragonslayer Spear</div>
                         <div className="div35"
@@ -318,6 +326,7 @@ const Darksouls = () => {
                                     localStorage.setItem('toggle-switch-12',`${e.target.checked}`);
                                     setSelected12(e.target.checked);
                                     console.log(e.target.checked)
+                                    swep = selected12 ? swep-6.67 : swep+6.67;
                                 }
                                 } />Smough's Hammer</div>
                         <div className="div38"
@@ -334,6 +343,7 @@ const Darksouls = () => {
                                     localStorage.setItem('toggle-switch-13',`${e.target.checked}`);
                                     setSelected13(e.target.checked);
                                     console.log(e.target.checked)
+                                    swep = selected13 ? swep-6.67 : swep+6.67;
                                 }
                                 } />Darkmoon Bow</div>
                         <div className="div41"
@@ -350,6 +360,7 @@ const Darksouls = () => {
                                     localStorage.setItem('toggle-switch-14',`${e.target.checked}`);
                                     setSelected14(e.target.checked);
                                     console.log(e.target.checked)
+                                    swep = selected14 ? swep-6.67 : swep+6.67;
                                 }
                                 } />The Darkmoon Catalyst</div>
                         <div className="div44"
@@ -366,6 +377,7 @@ const Darksouls = () => {
                                     localStorage.setItem('toggle-switch-15',`${e.target.checked}`);
                                     setSelected15(e.target.checked);
                                     console.log(e.target.checked)
+                                    swep = selected15 ? swep-6.67 : swep+6.67;
                                 }
                                 } />Great Lord Greatsword</div>
                         <div className="div47"
