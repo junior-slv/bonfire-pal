@@ -41,7 +41,7 @@ var Knight = styled.div`
     width: 100%;
     overflow: hidden;
 `
-
+var swep = 0;
 
 
 const Darksouls = () => {
@@ -114,10 +114,7 @@ const Darksouls = () => {
     }
 
 
-{/* <input type="checkbox" id='chek'
-        defaultChecked={checked}
-        onChange={() => setChecked(!checked)}
-      /> */}
+
     return ( 
         <div className="container-darksouls">
             <div className="menu-darksouls">
@@ -128,40 +125,66 @@ const Darksouls = () => {
                 <input type="checkbox" name="" id="chek" />
                 <form className="kni" >
                     <div className="souls-weapons">
-                        <div className="div1">Soul Weapons</div>
+                        <div className="div1">Soul Weapons: {swep.toFixed(2)}%</div>
                         <div className="div2">Soul Used:</div>
                         <div className="div3">You also need a +10 ...:</div>
-                        <div className="div4"> <ToggleSwitch checked={selected1} id='toggle-switch-1'
-                        onChange={
-                        (e) => {
-                                    localStorage.setItem('toggle-switch-1',`${e.target.checked}`);
-                                    setSelected1(e.target.checked);
-                                    console.log(e.target.checked)
-                                }
-                                } /> M.L. Butterfly Horn</div>
-                        <div className="div5">Moonlight Butterfly</div>
-                        <div className="div6">Spear/Thrusting Sword</div>
-                        <div className="div7"><ToggleSwitch checked={selected2} id='toggle-switch-2'
+                        <div className="div4"
+                            style={{ background: selected1 ? 'green' : 'none' }}
+                            
+                            > <ToggleSwitch checked={selected1} id='toggle-switch-1'
+                            onChange={
+                            (e) => {
+                                        localStorage.setItem('toggle-switch-1',`${e.target.checked}`);
+                                        setSelected1(e.target.checked);
+                                        console.log(e.target.checked)
+                                        swep = selected1 ? swep-6.6 : swep+6.6;
+
+                                    }
+                                    } /> M.L. Butterfly Horn</div>
+                        <div id='div5' className="div5"
+                            style={{ background: selected1 ? 'green' : 'none' }}
+                                        >Moonlight Butterfly</div>
+                        <div className="div6"
+                            style={{ background: selected1 ? 'green' : 'none' }}
+                                        >Spear/Thrusting Sword</div>
+                        <div className="div7"
+                            style={{ background: selected2 ? 'green' : 'none' }}
+                            ><ToggleSwitch checked={selected2} id='toggle-switch-2'
                         onChange={
                         (e) => {
                                     localStorage.setItem('toggle-switch-2',`${e.target.checked}`);
                                     setSelected2(e.target.checked);
                                     console.log(e.target.checked)
+                                    swep = selected2 ? swep-6.6 : swep+6.6;
                                 }
+                                
                                 } />Crystal Ring Shield</div>
-                        <div className="div8">Moonlight Butterfly</div>
-                        <div className="div9">Shield</div>
-                        <div className="div10"><ToggleSwitch checked={selected3} id='toggle-switch-3'
+                        <div className="div8"
+                            style={{ background: selected2 ? 'green' : 'none' }}                        
+                                    >Moonlight Butterfly</div>
+                        <div className="div9"
+                            style={{ background: selected2 ? 'green' : 'none' }}                        
+                                    >Shield</div>
+                        <div className="div10"
+                            style={{ background: selected3 ? 'green' : 'none' }}                        
+                            ><ToggleSwitch checked={selected3} id='toggle-switch-3'
                         onChange={
                         (e) => {
                                     localStorage.setItem('toggle-switch-3',`${e.target.checked}`);
                                     setSelected3(e.target.checked);
                                     console.log(e.target.checked)
+                                    swep = selected3 ? swep-6.6 : swep+6.6;
                                 }
                                 } />Quelaag's Furysword</div>
-                        <div className="div11">Quelaag</div>
-                        <div className="div12">Curved Sword</div>
-                        <div className="div13"><ToggleSwitch checked={selected4} id='toggle-switch-4'
+                        <div className="div11"
+                            style={{ background: selected3 ? 'green' : 'none' }}                            
+                                    >Quelaag</div>
+                        <div className="div12"
+                            style={{ background: selected3 ? 'green' : 'none' }}                            
+                                    >Curved Sword</div>
+                        <div className="div13"
+                            style={{ background: selected4 ? 'green' : 'none' }}                            
+                            ><ToggleSwitch checked={selected4} id='toggle-switch-4'
                         onChange={
                         (e) => {
                                     localStorage.setItem('toggle-switch-4',`${e.target.checked}`);
@@ -169,9 +192,15 @@ const Darksouls = () => {
                                     console.log(e.target.checked)
                                 }
                                 } />Chaos Blade</div>
-                        <div className="div14">Quelaag</div>
-                        <div className="div15">Katana</div>
-                        <div className="div16"><ToggleSwitch checked={selected5} id='toggle-switch-5'
+                        <div className="div14"
+                            style={{ background: selected4 ? 'green' : 'none' }}                            
+                                    >Quelaag</div>
+                        <div className="div15"
+                            style={{ background: selected4 ? 'green' : 'none' }}                            
+                                    >Katana</div>
+                        <div className="div16"
+                            style={{ background: selected5 ? 'green' : 'none' }}                            
+                            ><ToggleSwitch checked={selected5} id='toggle-switch-5'
                         onChange={
                         (e) => {
                                     localStorage.setItem('toggle-switch-5',`${e.target.checked}`);
@@ -179,9 +208,15 @@ const Darksouls = () => {
                                     console.log(e.target.checked)
                                 }
                                 } />G.Sword of Artorias (Cursed)</div>
-                        <div className="div17">Sif</div>
-                        <div className="div18">Dagger</div>
-                        <div className="div19"><ToggleSwitch checked={selected6} id='toggle-switch-6'
+                        <div className="div17"
+                            style={{ background: selected5 ? 'green' : 'none' }}                            
+                                >Sif</div>
+                        <div className="div18"
+                            style={{ background: selected5 ? 'green' : 'none' }}                            
+                                >Dagger</div>
+                        <div className="div19"
+                            style={{ background: selected6 ? 'green' : 'none' }}                            
+                            ><ToggleSwitch checked={selected6} id='toggle-switch-6'
                         onChange={
                         (e) => {
                                     localStorage.setItem('toggle-switch-6',`${e.target.checked}`);
@@ -189,9 +224,15 @@ const Darksouls = () => {
                                     console.log(e.target.checked)
                                 }
                                 } />G.Sword of Artorias</div>
-                        <div className="div20">Sif</div>
-                        <div className="div21">Broken S.Sword</div>
-                        <div className="div22"><ToggleSwitch checked={selected7} id='toggle-switch-7'
+                        <div className="div20"
+                            style={{ background: selected6 ? 'green' : 'none' }}                            
+                                >Sif</div>
+                        <div className="div21"
+                            style={{ background: selected6 ? 'green' : 'none' }}                            
+                                >Broken S.Sword</div>
+                        <div className="div22"
+                            style={{ background: selected7 ? 'green' : 'none' }}                            
+                            ><ToggleSwitch checked={selected7} id='toggle-switch-7'
                         onChange={
                         (e) => {
                                     localStorage.setItem('toggle-switch-7',`${e.target.checked}`);
@@ -199,9 +240,15 @@ const Darksouls = () => {
                                     console.log(e.target.checked)
                                 }
                                 } />G.Shield of Artorias</div>
-                        <div className="div23">Sif</div>
-                        <div className="div24">Shield</div>
-                        <div className="div25"><ToggleSwitch checked={selected8} id='toggle-switch-8'
+                        <div className="div23"
+                            style={{ background: selected7 ? 'green' : 'none' }}                            
+                                >Sif</div>
+                        <div className="div24"
+                            style={{ background: selected7 ? 'green' : 'none' }}                            
+                                >Shield</div>
+                        <div className="div25"
+                            style={{ background: selected8 ? 'green' : 'none' }}                            
+                            ><ToggleSwitch checked={selected8} id='toggle-switch-8'
                         onChange={
                         (e) => {
                                     localStorage.setItem('toggle-switch-8',`${e.target.checked}`);
@@ -209,9 +256,15 @@ const Darksouls = () => {
                                     console.log(e.target.checked)
                                 }
                                 } />Golem Axe</div>
-                        <div className="div26">Iron Golem</div>
-                        <div className="div27">Axe</div>
-                        <div className="div28"><ToggleSwitch checked={selected9} id='toggle-switch-9'
+                        <div className="div26"
+                            style={{ background: selected8 ? 'green' : 'none' }}                        
+                                >Iron Golem</div>
+                        <div className="div27"
+                            style={{ background: selected8 ? 'green' : 'none' }}                        
+                                >Axe</div>
+                        <div className="div28"
+                            style={{ background: selected9 ? 'green' : 'none' }}                        
+                            ><ToggleSwitch checked={selected9} id='toggle-switch-9'
                         onChange={
                         (e) => {
                                     localStorage.setItem('toggle-switch-9',`${e.target.checked}`);
@@ -219,9 +272,15 @@ const Darksouls = () => {
                                     console.log(e.target.checked)
                                 }
                                 } />Dragon Bone Fist</div>
-                        <div className="div29">Iron Golem</div>
-                        <div className="div30">Fist</div>
-                        <div className="div31"><ToggleSwitch checked={selected10} id='toggle-switch-10'
+                        <div className="div29"
+                            style={{ background: selected9 ? 'green' : 'none' }}                             
+                                >Iron Golem</div>
+                        <div className="div30"
+                            style={{ background: selected9 ? 'green' : 'none' }}                             
+                                >Fist</div>
+                        <div className="div31"
+                            style={{ background: selected10 ? 'green' : 'none' }}                             
+                            ><ToggleSwitch checked={selected10} id='toggle-switch-10'
                         onChange={
                         (e) => {
                                     localStorage.setItem('toggle-switch-10',`${e.target.checked}`);
@@ -229,9 +288,15 @@ const Darksouls = () => {
                                     console.log(e.target.checked)
                                 }
                                 } />Lifehunt Scythe</div>
-                        <div className="div32">Priscilla</div>
-                        <div className="div33">Halberd/Whip</div>
-                        <div className="div34"><ToggleSwitch checked={selected11} id='toggle-switch-11'
+                        <div className="div32"
+                            style={{ background: selected10 ? 'green' : 'none' }}                          
+                                >Priscilla</div>
+                        <div className="div33"
+                            style={{ background: selected10 ? 'green' : 'none' }}                          
+                                >Halberd/Whip</div>
+                        <div className="div34"
+                            style={{ background: selected11 ? 'green' : 'none' }}                          
+                            ><ToggleSwitch checked={selected11} id='toggle-switch-11'
                         onChange={
                         (e) => {
                                     localStorage.setItem('toggle-switch-11',`${e.target.checked}`);
@@ -239,9 +304,15 @@ const Darksouls = () => {
                                     console.log(e.target.checked)
                                 }
                                 } />Dragonslayer Spear</div>
-                        <div className="div35">Ornstein</div>
-                        <div className="div36">Spear/Thrusting Sword</div>
-                        <div className="div37"><ToggleSwitch checked={selected12} id='toggle-switch-12'
+                        <div className="div35"
+                            style={{ background: selected11 ? 'green' : 'none' }}                            
+                                >Ornstein</div>
+                        <div className="div36"
+                            style={{ background: selected11 ? 'green' : 'none' }}                            
+                                >Spear/Thrusting Sword</div>
+                        <div className="div37"
+                            style={{ background: selected12 ? 'green' : 'none' }}                            
+                            ><ToggleSwitch checked={selected12} id='toggle-switch-12'
                         onChange={
                         (e) => {
                                     localStorage.setItem('toggle-switch-12',`${e.target.checked}`);
@@ -249,9 +320,15 @@ const Darksouls = () => {
                                     console.log(e.target.checked)
                                 }
                                 } />Smough's Hammer</div>
-                        <div className="div38">Smough</div>
-                        <div className="div39">G./Hammer</div>
-                        <div className="div40"><ToggleSwitch checked={selected13} id='toggle-switch-13'
+                        <div className="div38"
+                            style={{ background: selected12 ? 'green' : 'none' }}                            
+                                >Smough</div>
+                        <div className="div39"
+                            style={{ background: selected12 ? 'green' : 'none' }}                            
+                                >G./Hammer</div>
+                        <div className="div40"
+                            style={{ background: selected13 ? 'green' : 'none' }}                            
+                            ><ToggleSwitch checked={selected13} id='toggle-switch-13'
                         onChange={
                         (e) => {
                                     localStorage.setItem('toggle-switch-13',`${e.target.checked}`);
@@ -259,9 +336,15 @@ const Darksouls = () => {
                                     console.log(e.target.checked)
                                 }
                                 } />Darkmoon Bow</div>
-                        <div className="div41">Gwyndolin</div>
-                        <div className="div42">Bow</div>
-                        <div className="div43"><ToggleSwitch checked={selected14} id='toggle-switch-14'
+                        <div className="div41"
+                            style={{ background: selected13 ? 'green' : 'none' }}                         
+                                >Gwyndolin</div>
+                        <div className="div42"
+                            style={{ background: selected13 ? 'green' : 'none' }}                         
+                                >Bow</div>
+                        <div className="div43"
+                            style={{ background: selected14 ? 'green' : 'none' }}                         
+                            ><ToggleSwitch checked={selected14} id='toggle-switch-14'
                         onChange={
                         (e) => {
                                     localStorage.setItem('toggle-switch-14',`${e.target.checked}`);
@@ -269,9 +352,15 @@ const Darksouls = () => {
                                     console.log(e.target.checked)
                                 }
                                 } />The Darkmoon Catalyst</div>
-                        <div className="div44">Gwyndolin</div>
-                        <div className="div45">Catalyst</div>
-                        <div className="div46"><ToggleSwitch checked={selected15} id='toggle-switch-15'
+                        <div className="div44"
+                            style={{ background: selected14 ? 'green' : 'none' }}                             
+                                >Gwyndolin</div>
+                        <div className="div45"
+                            style={{ background: selected14 ? 'green' : 'none' }}                             
+                                >Catalyst</div>
+                        <div className="div46"
+                            style={{ background: selected15 ? 'green' : 'none' }}                             
+                            ><ToggleSwitch checked={selected15} id='toggle-switch-15'
                         onChange={
                         (e) => {
                                     localStorage.setItem('toggle-switch-15',`${e.target.checked}`);
@@ -279,8 +368,12 @@ const Darksouls = () => {
                                     console.log(e.target.checked)
                                 }
                                 } />Great Lord Greatsword</div>
-                        <div className="div47">Gwyn</div>
-                        <div className="div48">Dagger/G.Sword/S.Sword</div>
+                        <div className="div47"
+                            style={{ background: selected15 ? 'green' : 'none' }}                             
+                                >Gwyn</div>
+                        <div className="div48"
+                            style={{ background: selected15 ? 'green' : 'none' }}                             
+                                >Dagger/G.Sword/S.Sword</div>
                     </div>
                     <div className="tail">
                         <div className="div49">Tail Cutoffs</div>
@@ -378,6 +471,7 @@ const Darksouls = () => {
                 </form>
             </div>
         </div>
+
      );
 }
 
